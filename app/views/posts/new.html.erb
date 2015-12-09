@@ -1,0 +1,9 @@
+<h1 id="new_post"> Create a new post </h1>
+
+<div class = "form-group">
+  <%= simple_form_for @post do |f| %>
+    <%= f.input :image %>
+    <%= f.input :caption %>
+    <%= f.input :release_date %>
+    <%= f.button :submit %>
+  <% end %>
