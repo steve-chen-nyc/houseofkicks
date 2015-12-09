@@ -38,9 +38,9 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     if @post.present?
       @post.destroy
-
+      redirect_to posts_path
     else
-    redirect_to posts_path
+    redirect_to posts_path(@post)
     end
   end
 

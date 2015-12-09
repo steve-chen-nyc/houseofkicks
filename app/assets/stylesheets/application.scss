@@ -1,1 +1,47 @@
 @import "bootstrap";
+
+body {
+  background-image: url('jordan-cement.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.page-header {
+  background-color:  #373a3c;
+  height: 200px;
+}
+
+.title {
+  font-family: lobster;
+  text-align: center;
+  padding-top: 20px;
+  color: 	#f9a306;
+  font-size: 5.0rem
+}
+
+a {
+  color: white;
+}
+
+.post-container {
+  background-color: white;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 75%;
+  text-align: center;
+  padding: 50px 0;
+  border-radius: 10px;
+}
+
+.post-content {
+  list-style: none;
+  font-family: lobster;
+  font-size: 1.1rem;
+  color: #373a3c;
+  padding-left: 0;
+}
+
+img {
+  border-radius: 10px;
+}

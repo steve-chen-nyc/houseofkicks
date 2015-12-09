@@ -1,6 +1,13 @@
 
-<% @posts.each do |post| %>
-  <%= link_to (image_tag post.image.url(:medium)), post_path(post) %> <br>
-  <%= post.caption %> <br>
-  <strong> Release Date: </strong> <%= post.release_date.strftime("%A,%B,%d") %>
-<% end %>
+<div class="post-container">
+  <% @posts.each do |post| %>
+      <% post.users.each do |user|%>
+        <ul class="post-content">
+          <li> <%= link_to (image_tag post.image.url(:medium)), post_path(post) %> </li> <br>
+          <li> <%= post.caption %> </li>  <br>
+          <li> <strong> Release Date: </strong> <%= post.release_date.strftime("%A,%B,%d") %></li> <br/>
+          <li> Posted by:  <%= "#{user.name}" %> </li>
+        </ul>
+      <% end %>
+  <% end %>
+</div>
