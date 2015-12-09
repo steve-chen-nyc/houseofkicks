@@ -8,15 +8,20 @@
     </p>
 
     <p class="caption">
-      <%= @post.release_date %>
+      <strong> Release Date: </strong><%= @post.release_date.strftime("%A,%B,%d") %>
     </p>
+
+    <h3> Comments </h3>
+    <%= render partial: 'posts/comment', collection: @post.comments %>
+
+    <%= render partial: 'comments/form' %>
 
     <div class="text-center">
       <%= link_to "Edit Kicks", edit_post_path %>
     </div>
 
     <div class="text-center">
-      <%= link_to "Delete", delete_post_path(@post), method: :delete, data: { confirm: "are you sure you want to delete?"} %>
+      <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "are you sure you want to delete?"} %>
     </div>
 
     <div class="text-center">

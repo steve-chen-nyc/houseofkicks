@@ -2,7 +2,7 @@
 
 <div class = "form-group">
   <%= simple_form_for @post do |f| %>
-    <%= f.input :image %>
+    <%= f.file_field :image %>
     <%= f.input :caption %>
     <%= f.input :release_date %>
     <%= f.button :submit %>

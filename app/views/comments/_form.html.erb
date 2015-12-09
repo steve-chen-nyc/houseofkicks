@@ -1,0 +1,9 @@
+<h3> Leave some love </h3>
+
+<div class = "form-group">
+<%= simple_form_for [ @post, @comment] do |f| %>
+    <%= f.input :name %>
+    <%= f.input :body %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

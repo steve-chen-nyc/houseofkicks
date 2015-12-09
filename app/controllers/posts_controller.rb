@@ -15,6 +15,10 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find(params[:id])
+
+    @comment = Comment.new
+    @comment.post_id = @post.id
+
   end
 
   def edit
@@ -31,8 +35,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     if @post.present?
       @post.destroy
-    end
+
+    else
     redirect_to posts_path
+    end
   end
 
 

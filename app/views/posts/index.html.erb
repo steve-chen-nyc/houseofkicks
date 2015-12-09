@@ -2,5 +2,5 @@
 <% @posts.each do |post| %>
   <%= link_to (image_tag post.image.url(:medium)), post_path(post) %> <br>
   <%= post.caption %> <br>
-  <%= post.release_date %>
+  <strong> Release Date: </strong> <%= post.release_date.strftime("%A,%B,%d") %>
 <% end %>
