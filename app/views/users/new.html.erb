@@ -1,12 +1,15 @@
-<h1> Join The Team </h1>
 
-<div class = "form-group">
-<%= simple_form_for(@user, html:  {class: 'form-horizontal'}) do |f| %>
-  <%= f.input :name, label: "User Name" , input_html: { class: "form-control"} %>
-  <%= f.input :email, label: "Email" , input_html: { class: "form-control"} %>
-  <%= f.input :password, label: "Password", input_html: { class: "form-control"} %>
-  <%= f.input :password_confirmation, label: "Confirm Password", input_html: { class: "form-control"} %>
-  <br>
-  <%= f.button :submit %>
+
+ <div class="signup">
+  <h3> Join The Team </h3>
+  <div class = "form-group" id="signup-form">
+    <%= simple_form_for(@user, html:  {class: 'form-horizontal'}) do |f| %>
+    <%= f.input :name, label: "User Name" , input_html: { class: "form-control"} %>
+    <%= f.input :email, label: "Email" , input_html: { class: "form-control"} %>
+    <%= f.input :password, label: "Password", input_html: { class: "form-control"} %>
+    <%= f.input :password_confirmation, label: "Confirm Password", input_html: { class: "form-control"} %>
+    <br>
+    <%= f.button :submit %>
+    <% end %>
+  </div>
 </div>
-  <% end %>

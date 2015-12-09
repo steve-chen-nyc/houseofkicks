@@ -45,3 +45,74 @@ a {
 img {
   border-radius: 10px;
 }
+
+.footer {
+  text-align: center;
+  color: white;
+}
+
+.new-post-form {
+  text-align: center;
+  background-color: white;
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.show-post {
+  margin: 0 auto;
+  width: 75%;
+  background-color: white;
+  padding: 40px 0px;
+}
+
+.show-post-content {
+    list-style: none;
+    text-align: center;
+    font-family: lobster;
+    padding-left: 0;
+    font-size: 1.1rem;
+}
+
+li {
+  padding-top: 10px;
+  list-style: none;
+}
+
+.post-comments {
+  text-align: center;
+}
+
+.session-form {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  padding: 40px 0;
+  font-family: lobster;
+}
+
+.signup {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  padding: 40px 0;
+  font-family: lobster;
+}
+
+#signup-form {
+  width:50%;
+  margin: 0 auto;
+}
+
+.show-user {
+  margin: 0 auto;
+  width: 75%;
+  background-color: white;
+  padding: 40px 0px;
+  text-align: center;
+  list-style: none;
+  font-family: lobster;
+  font-size: 1.1rem;
+}

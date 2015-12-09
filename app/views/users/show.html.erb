@@ -1,9 +1,11 @@
-<h3> Hello! <%= @user.name %> </h3>
 
-<% @user.posts.each do |post|  %>
-  <ul>
-   <li> <%= image_tag post.image.url(:medium) %>
-   <li> <strong> Description: </strong>  <%= post.caption  %> </li>
-   <li> <strong>Release Date: </strong> <%= post.release_date.strftime("%A,%B,%d") %> </li>
- </ul>
-<% end %>
+<div class="show-user">
+  <h3>  <%= @user.name %>, Yo Kicks! </h3>
+  <% @user.posts.each do |post|  %>
+    <ul>
+     <li> <%= image_tag post.image.url(:medium) %>
+     <li> <strong> Description: </strong>  <%= post.caption  %> </li>
+     <li> <strong>Release Date: </strong> <%= post.release_date.strftime("%A,%B,%d") %> </li>
+   </ul>
+  <% end %>
+</div>

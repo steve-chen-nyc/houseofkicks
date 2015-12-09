@@ -1,9 +1,11 @@
-<div class ="session_form">
+<div class ="session-form">
+    <h3> Login </h3> 
 
-<%= form_tag '/login' do %>
-<p class="form"> Email <%= text_field_tag :email %> </p> <br>
-<p class="form"> Password  <%= password_field_tag :password %> </p> <br>
-<p id ="button"> <%= submit_tag "Login" %> <p>  <br>
-<% end %>
+
+    <%= form_tag '/login' do %>
+    <p class="form"> Email <%= text_field_tag :email %> </p> <br>
+    <p class="form"> Password  <%= password_field_tag :password %> </p> <br>
+    <p id ="button"> <%= submit_tag "Login" %> <p>  <br>
+    <% end %>
 
 </div>
