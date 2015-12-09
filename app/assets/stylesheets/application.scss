@@ -116,3 +116,22 @@ li {
   font-family: lobster;
   font-size: 1.1rem;
 }
+
+.edit-form {
+  margin: 0 auto;
+  width: 75%;
+  background-color: white;
+  padding: 40px 0px;
+  text-align: center;
+  font-family: lobster;
+  font-size: 1.1rem;
+}
+
+#edit-form-content {
+  padding-top: 40px;
+}
+
+a:hover {
+  color: #f9a306;
+  text-decoration: none; 
+}

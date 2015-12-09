@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Houseofkicks</title>
+  <title>House of Kicks</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
@@ -15,17 +15,17 @@
           <div class="container-fluid">
                <div class="navbar-header">
                   <span role="presentation"><a href="/">Home | </a></span>
-                  <span role="presentation"><a href="/posts/new">Add New Kicks | </a></span>
                   <% if current_user %>
-                  <span role="presentation"> <%= link_to "See My Kicks", user_path(current_user.id) %> </a></span>
+                    <span role="presentation"><a href="/posts/new">Add New Kicks | </a></span>
+                    <span role="presentation"> <%= link_to "See My Kicks", user_path(current_user.id) %> </a></span>
                   <% else %>
-                  <%= link_to 'Login |', '/login' %> 
-                  <%= link_to 'Signup', '/signup' %>
+                    <%= link_to 'Login |', '/login' %>
+                    <%= link_to 'Signup', '/signup' %>
                   <% end %>
             </div>
           </div>
         </nav>
-    <h1 class="title"> House Of Kicks  </h1>
+    <h1 class="title"> House of Kicks  </h1>
 </header>
 
 

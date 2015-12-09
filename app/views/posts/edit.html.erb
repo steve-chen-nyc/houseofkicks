@@ -1,16 +1,24 @@
-<div class="text-center">
-  <%= image_tag @post.image.url(:medium) %>
-</div>
-<div class="form-wrapper">
-  <%= simple_form_for @post, html: { class: 'form-horizontal', multipart: true } do |f| %>
-    <div class="form-group">
-      <%= f.file_field :image %>
+
+
+  <div class="edit-form">
+    <div>
+      <%= image_tag @post.image.url(:medium) %>
     </div>
-    <div class="form-group text-center">
-      <%= f.input :caption %>
+
+    <div class="form-wrapper" id="edit-form-content">
+      <%= simple_form_for @post, html: { class: 'form-horizontal', multipart: true } do |f| %>
+        <div class="form-group">
+          <%= f.file_field :image %>
+        </div>
+        <div class="form-group">
+          <%= f.input :caption %>
+        </div>
+        <div class="form-group">
+          <%= f.input :release_date %>
+        </div>
+        <div class="form-group">
+          <%= f.button :submit, class: 'btn-success' %>
+        </div>
+      <% end %>
     </div>
-    <div class="form-group text-center">
-      <%= f.button :submit, class: 'btn-success' %>
-    </div>
-  <% end %>
-</div>
+  </div>
