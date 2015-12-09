@@ -20,8 +20,15 @@
 
 <h1> House Of Kicks  </h1>
 
+
+
 <%= yield %>
 
+<br/> <% if current_user %>
+  Signed in as <%= "#{current_user.name}" %> | <%= link_to "Logout", '/logout' %>
+<% else %>
+  <%= link_to 'Login', '/login' %> | <%= link_to 'Signup', '/signup' %>
+<% end %>
 
 </body>
 </html>
