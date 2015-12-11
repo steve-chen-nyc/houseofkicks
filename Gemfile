@@ -43,6 +43,7 @@ gem "paperclip", "~> 4.3"
 gem 'bcrypt', '~> 3.1', '>= 3.1.10'
 
 gem 'aws-sdk', '~> 2'
+ gem 'fog'
 
 gem 'rails_12factor', group: :production
 
