@@ -1,5 +1,5 @@
 class PostsController < ApplicationController
-  
+
   def index
     @posts = Post.all
   end
@@ -49,5 +49,6 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:image, :caption, :release_date)
   end
+
 
 end
