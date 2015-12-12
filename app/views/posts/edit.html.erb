@@ -1,22 +1,22 @@
 
 
   <div class="edit-form">
-    <div>
+    <div class="image">
       <%= image_tag @post.image.url(:medium) %>
     </div>
 
-    <div class="form-wrapper" id="edit-form-content">
+    <div class="form-group edit-form" id="edit-form-content">
       <%= simple_form_for @post, html: { class: 'form-horizontal', multipart: true } do |f| %>
-        <div class="form-group">
+        <div class="form-group edit">
           <%= f.file_field :image %>
         </div>
-        <div class="form-group">
-          <%= f.input :caption %>
+        <div class="form-group edit">
+          <%= f.input :caption, label: false, input_html: { class: "form-control"} %>
         </div>
-        <div class="form-group">
-          <%= f.input :release_date %>
+        <div class="form-group edit">
+          <%= f.input :release_date, label: false %>
         </div>
-        <div class="form-group">
+        <div class="form-group edit">
           <%= f.button :submit, class: 'btn-success' %>
         </div>
       <% end %>

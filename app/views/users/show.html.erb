@@ -3,7 +3,7 @@
   <h3>  <%= @user.name %>, Yo Kicks! </h3>
   <% @user.posts.each do |post|  %>
     <ul>
-     <li> <%= image_tag post.image.url(:medium) %>
+     <li class="image"> <%= image_tag post.image.url(:medium) %>
      <li> <strong> Description: </strong>  <%= post.caption  %> </li>
      <li> <strong>Release Date: </strong> <%= post.release_date.strftime("%A,%B,%d") %> </li>
    </ul>

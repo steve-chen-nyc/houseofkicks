@@ -2,7 +2,7 @@
   <div class="show-post">
     <br/>
     <ul class="show-post-content">
-      <li> <%= image_tag @post.image.url(:medium) %> <br/> </li>
+      <li class="image"> <%= image_tag @post.image.url(:medium) %> <br/> </li>
       <li> <%= @post.caption %> <br/> </li>
       <li>  <strong> Release Date: </strong><%= @post.release_date.strftime("%A,%B,%d") %> </li>
     </ul>

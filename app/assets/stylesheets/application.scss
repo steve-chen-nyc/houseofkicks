@@ -64,6 +64,7 @@ img {
   width: 75%;
   background-color: white;
   padding: 40px 0px;
+  border-radius: 5px;
 }
 
 .show-post-content {
@@ -133,5 +134,55 @@ li {
 
 a:hover {
   color: #f9a306;
-  text-decoration: none; 
+  text-decoration: none;
+}
+
+img {
+  width: 75%;
+}
+
+.comment-form {
+  font-family: lobster;
+  background-color: gray;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.comment-header {
+  color: #f9a306;
+}
+
+.form-group .login-form {
+  width: 50%;
+  margin: 0 auto;
+  padding: 10px 0 10px 0;
+}
+
+.session-form {
+  border-radius: 5px;
+}
+
+.edit-form {
+  border-radius: 5px;
+}
+
+.form-group .edit-form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.form-group .edit {
+  padding-bottom: 20px;
+}
+
+.comments {
+  font-family: lobster;
+  background-color: gray;
+  padding: 20px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
